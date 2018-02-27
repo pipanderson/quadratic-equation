@@ -15,10 +15,6 @@ module.exports = function solveEquation(equation) {
     solutions[1]=Math.round((-b+Math.sqrt(D))/(2*a));
     
     return (solutions.sort(compare));
-  } else if (d=0) {
-    solutions[0]=Math.round(-b/(2*a));
-    return (solutions.sort(compare));
-  } else {
-    return(null);
+  };
   };
   
